@@ -18,7 +18,7 @@ abstract class FormRequest extends Request
         $validator = app('validator')->make($this->all(), $this->rules(), $this->messages());
 
         if ($validator->fails()) {
-            throw new ValidationException($validator);
+            throw new ValidationException($validator, $validator->errors());
         }
     }
 
