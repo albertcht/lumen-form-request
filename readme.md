@@ -12,16 +12,16 @@ A package that helps developer to segregate the validation logic from controller
 ### Installation
 
 ```
-composer require albertcht/lumen-form-request
+composer require joeldeval/lumen-form-request
 ```
 
 * Add the service provider in `bootstrap/app.php`
 
 ```
-$app->register(AlbertCht\Form\FormRequestServiceProvider::class);
+$app->register(Joeldeval\Form\FormRequestServiceProvider::class);
 ```
 
-Next step is create your FormRequest and extends from `AlbertCht\Form\FormRequest`
+Next step is create your FormRequest and extends from `Joeldeval\Form\FormRequest`
 
 ### Example
 
@@ -30,7 +30,7 @@ Next step is create your FormRequest and extends from `AlbertCht\Form\FormReques
 
 namespace App\Http\Requests;
 
-use AlbertCht\Form\FormRequest;
+use Joeldeval\Form\FormRequest;
 
 class StoreDeviceRequest extends FormRequest
 {
