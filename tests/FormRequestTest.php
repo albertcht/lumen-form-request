@@ -1,6 +1,6 @@
 <?php
 
-namespace AlbertCht\Form\Tests;
+namespace Joeldeval\Form\Tests;
 
 use PHPUnit\Framework\TestCase;
 
