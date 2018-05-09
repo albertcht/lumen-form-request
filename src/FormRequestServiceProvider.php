@@ -20,7 +20,6 @@ class FormRequestServiceProvider extends ServiceProvider
 
         $this->app->afterResolving(FormRequest::class, function ($form) {
             $form->validate();
-            $form->resolveUser();
         });
     }
 
