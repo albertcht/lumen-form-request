@@ -19,6 +19,7 @@ class FormRequestServiceProvider extends ServiceProvider
         });
 
         $this->app->afterResolving(FormRequest::class, function ($form) {
+            if (!$form instanceof \App\Http\Requests\FormRequest) continue;
             $form->validate();
             $form->resolveUser();
         });
